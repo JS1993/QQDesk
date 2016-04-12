@@ -29,31 +29,69 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ja7-zg-UbS">
                                 <rect key="frame" x="-8" y="524" width="336" height="44"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chat_bottom_bg" translatesAutoresizingMaskIntoConstraints="NO" id="8fe-bd-8oe">
-                                        <rect key="frame" x="0.0" y="0.0" width="328" height="43"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_bottom_bg" translatesAutoresizingMaskIntoConstraints="NO" id="8fe-bd-8oe">
+                                        <rect key="frame" x="0.0" y="0.0" width="336" height="44"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tk3-yj-bMn">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tk3-yj-bMn">
                                         <rect key="frame" x="8" y="5" width="34" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="34" id="MI1-XM-9iD"/>
+                                        </constraints>
                                         <state key="normal" image="chat_bottom_voice_nor"/>
                                         <state key="highlighted" image="chat_bottom_voice_press"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYe-pm-JOU">
-                                        <rect key="frame" x="250" y="5" width="34" height="34"/>
-                                        <state key="normal" image="chat_bottom_smile_nor"/>
-                                        <state key="highlighted" image="chat_bottom_smile_press"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlS-NC-VdZ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlS-NC-VdZ">
                                         <rect key="frame" x="283" y="5" width="34" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="34" id="rHJ-kY-cAX"/>
+                                        </constraints>
                                         <state key="normal" image="chat_bottom_up_nor"/>
                                         <state key="highlighted" image="chat_bottom_up_press"/>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="chat_bottom_textfield" translatesAutoresizingMaskIntoConstraints="NO" id="Ft3-ni-R5o">
-                                        <rect key="frame" x="50" y="7" width="197" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="chat_bottom_textfield" translatesAutoresizingMaskIntoConstraints="NO" id="Ft3-ni-R5o">
+                                        <rect key="frame" x="50" y="7" width="192" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="192" id="hop-SJ-4kZ"/>
+                                            <constraint firstAttribute="width" constant="192" id="wYN-Uj-vr8"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="hop-SJ-4kZ"/>
+                                                <exclude reference="wYN-Uj-vr8"/>
+                                            </mask>
+                                        </variation>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYe-pm-JOU">
+                                        <rect key="frame" x="250" y="5" width="34" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="34" id="32n-mL-Lef"/>
+                                        </constraints>
+                                        <state key="normal" image="chat_bottom_smile_nor"/>
+                                        <state key="highlighted" image="chat_bottom_smile_press"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="BlS-NC-VdZ" firstAttribute="top" secondItem="Ja7-zg-UbS" secondAttribute="top" constant="5" id="43O-PP-d5J"/>
+                                    <constraint firstItem="8fe-bd-8oe" firstAttribute="top" secondItem="Ja7-zg-UbS" secondAttribute="top" id="7E1-YP-RvY"/>
+                                    <constraint firstItem="Tk3-yj-bMn" firstAttribute="leading" secondItem="Ja7-zg-UbS" secondAttribute="leading" constant="8" id="C0l-0B-ag9"/>
+                                    <constraint firstItem="tYe-pm-JOU" firstAttribute="leading" secondItem="Ft3-ni-R5o" secondAttribute="trailing" constant="8" id="EDj-xc-JAw"/>
+                                    <constraint firstAttribute="trailing" secondItem="8fe-bd-8oe" secondAttribute="trailing" id="ERP-jS-a4T"/>
+                                    <constraint firstAttribute="trailing" secondItem="BlS-NC-VdZ" secondAttribute="trailing" constant="19" id="Rbb-bN-EfM"/>
+                                    <constraint firstAttribute="bottom" secondItem="BlS-NC-VdZ" secondAttribute="bottom" constant="5" id="SyP-sc-kpl"/>
+                                    <constraint firstItem="8fe-bd-8oe" firstAttribute="leading" secondItem="Ja7-zg-UbS" secondAttribute="leading" id="Tk7-4v-Na6"/>
+                                    <constraint firstItem="Ft3-ni-R5o" firstAttribute="top" secondItem="Ja7-zg-UbS" secondAttribute="top" constant="7" id="UWR-Dp-sx6"/>
+                                    <constraint firstItem="Ft3-ni-R5o" firstAttribute="leading" secondItem="Tk3-yj-bMn" secondAttribute="trailing" constant="8" id="Uze-a0-150"/>
+                                    <constraint firstItem="tYe-pm-JOU" firstAttribute="top" secondItem="Ja7-zg-UbS" secondAttribute="top" constant="5" id="fs3-WQ-hJ4"/>
+                                    <constraint firstAttribute="bottom" secondItem="8fe-bd-8oe" secondAttribute="bottom" id="g8L-st-Q8k"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ft3-ni-R5o" secondAttribute="bottom" constant="7" id="kOe-7p-Nnx"/>
+                                    <constraint firstAttribute="bottom" secondItem="tYe-pm-JOU" secondAttribute="bottom" constant="5" id="kZp-u5-m4n"/>
+                                    <constraint firstAttribute="trailing" secondItem="tYe-pm-JOU" secondAttribute="trailing" constant="52" id="rLT-ck-PeK"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tk3-yj-bMn" secondAttribute="bottom" constant="5" id="sdb-2t-HMy"/>
+                                    <constraint firstItem="Tk3-yj-bMn" firstAttribute="top" secondItem="Ja7-zg-UbS" secondAttribute="top" constant="5" id="uHR-TB-pbF"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
