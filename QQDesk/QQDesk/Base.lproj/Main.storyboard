@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,9 +17,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Fe-zL-56h">
+                                <rect key="frame" x="-4" y="20" width="328" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="xxL-sJ-t1I"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="sDs-qp-qYX"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLd-81-53e">
+                                <rect key="frame" x="-4" y="524" width="328" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.6080809049" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="vLd-81-53e" secondAttribute="trailing" constant="-20" id="34Q-oB-z93"/>
+                            <constraint firstItem="8Fe-zL-56h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="7vA-rT-uec"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Fe-zL-56h" secondAttribute="trailing" constant="-20" id="QI4-v7-y6N"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vLd-81-53e" secondAttribute="bottom" id="e1m-9D-1m9"/>
+                            <constraint firstItem="vLd-81-53e" firstAttribute="top" secondItem="8Fe-zL-56h" secondAttribute="bottom" id="edF-0a-2Et"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Fe-zL-56h" secondAttribute="bottom" constant="44" id="ibF-xd-v1z"/>
+                            <constraint firstItem="vLd-81-53e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="w3w-Jb-Q7e"/>
+                            <constraint firstItem="8Fe-zL-56h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="x8G-T1-lgY"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="8Fe-zL-56h" id="O81-6X-4Ye"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
