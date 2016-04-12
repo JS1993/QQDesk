@@ -28,10 +28,10 @@
     CGRect textRect=[self.cellModel.text boundingRectWithSize:CGSizeMake(200, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]} context:nil];
     if (self.cellModel.type==1) {
         textRect.origin.x=CGRectGetMaxX(self.headImageViewF)+padding;
-        textRect.origin.y=CGRectGetMaxY(self.timeF);
+        textRect.origin.y=CGRectGetMaxY(self.timeF)+10;
     }else{
         textRect.origin.x=screenWidth-padding-50-textRect.size.width;
-        textRect.origin.y=CGRectGetMaxY(self.timeF);
+        textRect.origin.y=CGRectGetMaxY(self.timeF)+10;
     }
     _textF=textRect;
     
@@ -44,8 +44,13 @@
     NSMutableArray* arrM=[NSMutableArray array];
     NSArray* arr=[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"messages" ofType:@"plist"]];
     for (NSDictionary* dic in arr ) {
+        CellModelFrame* lastF=[arrM lastObject];
+        CellModel* cellModel=[CellModel cellModelWithDict:dic];
         CellModelFrame* cellModelFrame=[[CellModelFrame alloc]init];
-        cellModelFrame.cellModel=[CellModel cellModelWithDict:dic];
+        cellModelFrame.cellModel=cellModel;
+        if ([cellModelFrame.cellModel.time isEqualToString:lastF.cellModel.time]) {
+            cellModelFrame.hiddenTime=YES;
+        }
         [arrM addObject:cellModelFrame];
     }
     return arrM;

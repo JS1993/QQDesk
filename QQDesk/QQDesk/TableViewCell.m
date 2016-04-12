@@ -67,7 +67,12 @@
 
 -(void)setContents{
     //设置时间
-    self.timeLabel.text=self.cellModelF.cellModel.time;
+    if (!self.cellModelF.hiddenTime) {
+        self.timeLabel.hidden=NO;
+        self.timeLabel.text=self.cellModelF.cellModel.time;
+    }else{
+        self.timeLabel.hidden=YES;
+    }
     
    //设置头像
     if (self.cellModelF.cellModel.type==0) {

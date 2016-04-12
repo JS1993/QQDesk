@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QQDesk/CellModelFrame.m"
-            timestampString = "482124281.443817"
+            timestampString = "482139491.169923"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "+cellModelFrames"
             landmarkType = "5">
          </BreakpointContent>

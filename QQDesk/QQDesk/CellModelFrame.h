@@ -14,6 +14,7 @@
 @property(nonatomic,assign)CGRect timeF;
 @property(nonatomic,assign)CGRect headImageViewF;
 @property(nonatomic)CGFloat cellHight;
+@property(nonatomic)BOOL hiddenTime;
 
 @property(nonatomic,strong)CellModel* cellModel;
 
