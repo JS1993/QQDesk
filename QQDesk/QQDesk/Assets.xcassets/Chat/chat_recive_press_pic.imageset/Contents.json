@@ -5,6 +5,20 @@
       "scale" : "1x"
     },
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 36,
+          "top" : 53,
+          "right" : 46,
+          "left" : 46
+        }
+      },
       "idiom" : "universal",
       "filename" : "chat_recive_press_pic@2x.png",
       "scale" : "2x"

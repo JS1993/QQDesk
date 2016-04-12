@@ -41,7 +41,8 @@
         _textsButton.titleLabel.textAlignment=NSTextAlignmentLeft;
         _textsButton.titleLabel.font=[UIFont systemFontOfSize:15];
         _textsButton.titleLabel.numberOfLines=0;
-        _textsButton.backgroundColor=[UIColor grayColor];
+        [_textsButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        _textsButton.contentEdgeInsets=UIEdgeInsetsMake(20, 20, 20, 20);
         [self.contentView addSubview:_textsButton];
     }
     return _textsButton;
@@ -66,6 +67,7 @@
 }
 
 -(void)setContents{
+    self.backgroundColor=[UIColor clearColor];
     //设置时间
     if (!self.cellModelF.hiddenTime) {
         self.timeLabel.hidden=NO;
@@ -83,6 +85,11 @@
     
     //设置消息内容
     [self.textsButton setTitle:self.cellModelF.cellModel.text forState:UIControlStateNormal];
+    if (self.cellModelF.cellModel.type==1) {
+        [self.textsButton setBackgroundImage:[UIImage imageNamed:@"chat_recive_press_pic"] forState:UIControlStateNormal];
+    }else{
+        [self.textsButton setBackgroundImage:[UIImage imageNamed:@"chat_send_nor"] forState:UIControlStateNormal];
+    }
     
 }
 

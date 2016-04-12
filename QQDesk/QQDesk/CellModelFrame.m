@@ -28,12 +28,12 @@
     CGRect textRect=[self.cellModel.text boundingRectWithSize:CGSizeMake(200, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]} context:nil];
     if (self.cellModel.type==1) {
         textRect.origin.x=CGRectGetMaxX(self.headImageViewF)+padding;
-        textRect.origin.y=CGRectGetMaxY(self.timeF)+10;
+        textRect.origin.y=CGRectGetMaxY(self.timeF);
     }else{
-        textRect.origin.x=screenWidth-padding-50-textRect.size.width;
-        textRect.origin.y=CGRectGetMaxY(self.timeF)+10;
+        textRect.origin.x=screenWidth-padding-50-textRect.size.width-40;
+        textRect.origin.y=CGRectGetMaxY(self.timeF);
     }
-    _textF=textRect;
+    _textF=CGRectMake(textRect.origin.x, textRect.origin.y, textRect.size.width+40, textRect.size.height+40);
     
     //得到行高
     _cellHight=MAX(CGRectGetMaxY(self.headImageViewF), CGRectGetMaxY(self.textF));

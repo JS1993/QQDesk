@@ -27,20 +27,45 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ja7-zg-UbS">
-                                <rect key="frame" x="-4" y="525" width="328" height="43"/>
-                                <color key="backgroundColor" red="1" green="0.76667748879999997" blue="0.59894772330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="-8" y="524" width="336" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chat_bottom_bg" translatesAutoresizingMaskIntoConstraints="NO" id="8fe-bd-8oe">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="43"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tk3-yj-bMn">
+                                        <rect key="frame" x="8" y="5" width="34" height="34"/>
+                                        <state key="normal" image="chat_bottom_voice_nor"/>
+                                        <state key="highlighted" image="chat_bottom_voice_press"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYe-pm-JOU">
+                                        <rect key="frame" x="250" y="5" width="34" height="34"/>
+                                        <state key="normal" image="chat_bottom_smile_nor"/>
+                                        <state key="highlighted" image="chat_bottom_smile_press"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlS-NC-VdZ">
+                                        <rect key="frame" x="283" y="5" width="34" height="34"/>
+                                        <state key="normal" image="chat_bottom_up_nor"/>
+                                        <state key="highlighted" image="chat_bottom_up_press"/>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="chat_bottom_textfield" translatesAutoresizingMaskIntoConstraints="NO" id="Ft3-ni-R5o">
+                                        <rect key="frame" x="50" y="7" width="197" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ja7-zg-UbS" secondAttribute="trailing" constant="-20" id="FJ8-CP-t2L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ja7-zg-UbS" secondAttribute="trailing" constant="-24" id="0kg-hw-P7p"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8Fe-zL-56h" secondAttribute="trailing" constant="-20" id="Gvm-nh-G4G"/>
-                            <constraint firstItem="Ja7-zg-UbS" firstAttribute="top" secondItem="8Fe-zL-56h" secondAttribute="bottom" constant="1" id="InS-K9-APL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ja7-zg-UbS" secondAttribute="bottom" id="KfE-We-UTs"/>
                             <constraint firstItem="8Fe-zL-56h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="LQB-4Q-Umz"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ja7-zg-UbS" secondAttribute="bottom" id="WQL-se-MCZ"/>
-                            <constraint firstItem="Ja7-zg-UbS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="hZZ-HQ-Ml6"/>
                             <constraint firstItem="8Fe-zL-56h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="liY-dv-0Yx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Fe-zL-56h" secondAttribute="bottom" constant="44" id="qwQ-V3-tsm"/>
+                            <constraint firstItem="Ja7-zg-UbS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-24" id="xtO-ss-WXp"/>
+                            <constraint firstItem="Ja7-zg-UbS" firstAttribute="top" secondItem="8Fe-zL-56h" secondAttribute="bottom" id="zPE-Jx-cU0"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -53,4 +78,14 @@
             <point key="canvasLocation" x="245" y="302"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chat_bottom_bg" width="10" height="42"/>
+        <image name="chat_bottom_smile_nor" width="34" height="34"/>
+        <image name="chat_bottom_smile_press" width="34" height="34"/>
+        <image name="chat_bottom_textfield" width="166" height="31"/>
+        <image name="chat_bottom_up_nor" width="34" height="34"/>
+        <image name="chat_bottom_up_press" width="34" height="34"/>
+        <image name="chat_bottom_voice_nor" width="34" height="34"/>
+        <image name="chat_bottom_voice_press" width="34" height="34"/>
+    </resources>
 </document>
