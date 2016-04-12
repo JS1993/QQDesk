@@ -103,15 +103,12 @@
 		CF18C6B91CBC90DC009F22C4 /* QQDesk */ = {
 			isa = PBXGroup;
 			children = (
-				CF18C6BD1CBC90DC009F22C4 /* AppDelegate.h */,
-				CF18C6BE1CBC90DC009F22C4 /* AppDelegate.m */,
-				CF18C6C01CBC90DC009F22C4 /* ViewController.h */,
-				CF18C6C11CBC90DC009F22C4 /* ViewController.m */,
 				CF18C6C31CBC90DC009F22C4 /* Main.storyboard */,
-				CF18C6C91CBC90DC009F22C4 /* Assets.xcassets */,
 				CF18C6CB1CBC90DC009F22C4 /* LaunchScreen.storyboard */,
-				CF18C6CE1CBC90DC009F22C4 /* Info.plist */,
-				CF18C6C61CBC90DC009F22C4 /* QQDesk.xcdatamodeld */,
+				CF18C6F01CBC9239009F22C4 /* Model */,
+				CF18C6F11CBC9256009F22C4 /* View */,
+				CF18C6F21CBC9267009F22C4 /* Controller */,
+				CF18C6F31CBC9276009F22C4 /* Other */,
 				CF18C6BA1CBC90DC009F22C4 /* Supporting Files */,
 			);
 			path = QQDesk;
@@ -120,6 +117,9 @@
 		CF18C6BA1CBC90DC009F22C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CF18C6C61CBC90DC009F22C4 /* QQDesk.xcdatamodeld */,
+				CF18C6CE1CBC90DC009F22C4 /* Info.plist */,
+				CF18C6C91CBC90DC009F22C4 /* Assets.xcassets */,
 				CF18C6BB1CBC90DC009F22C4 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -141,6 +141,38 @@
 				CF18C6E41CBC90DC009F22C4 /* Info.plist */,
 			);
 			path = QQDeskUITests;
+			sourceTree = "<group>";
+		};
+		CF18C6F01CBC9239009F22C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CF18C6F11CBC9256009F22C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CF18C6F21CBC9267009F22C4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF18C6C01CBC90DC009F22C4 /* ViewController.h */,
+				CF18C6C11CBC90DC009F22C4 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CF18C6F31CBC9276009F22C4 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CF18C6BD1CBC90DC009F22C4 /* AppDelegate.h */,
+				CF18C6BE1CBC90DC009F22C4 /* AppDelegate.m */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
