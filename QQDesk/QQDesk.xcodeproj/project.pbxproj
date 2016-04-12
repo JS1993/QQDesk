@@ -19,6 +19,7 @@
 		CF18C6F61CBC95BE009F22C4 /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF18C6F51CBC95BE009F22C4 /* CellModel.m */; };
 		CF18C6F91CBC95CC009F22C4 /* CellModelFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CF18C6F81CBC95CC009F22C4 /* CellModelFrame.m */; };
 		CF18C6FB1CBC961C009F22C4 /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF18C6FA1CBC961C009F22C4 /* messages.plist */; };
+		CF18C6FE1CBC986B009F22C4 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF18C6FD1CBC986B009F22C4 /* TableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		CF18C6F71CBC95CC009F22C4 /* CellModelFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellModelFrame.h; sourceTree = "<group>"; };
 		CF18C6F81CBC95CC009F22C4 /* CellModelFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellModelFrame.m; sourceTree = "<group>"; };
 		CF18C6FA1CBC961C009F22C4 /* messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = messages.plist; sourceTree = "<group>"; };
+		CF18C6FC1CBC986B009F22C4 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		CF18C6FD1CBC986B009F22C4 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +169,8 @@
 		CF18C6F11CBC9256009F22C4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CF18C6FC1CBC986B009F22C4 /* TableViewCell.h */,
+				CF18C6FD1CBC986B009F22C4 /* TableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -322,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF18C6FE1CBC986B009F22C4 /* TableViewCell.m in Sources */,
 				CF18C6C81CBC90DC009F22C4 /* QQDesk.xcdatamodeld in Sources */,
 				CF18C6C21CBC90DC009F22C4 /* ViewController.m in Sources */,
 				CF18C6BF1CBC90DC009F22C4 /* AppDelegate.m in Sources */,

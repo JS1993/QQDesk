@@ -9,5 +9,15 @@
 #import "CellModel.h"
 
 @implementation CellModel
+-(instancetype)initWithDict:(NSDictionary*)dict{
+    self=[super init];
+    if (self) {
+        [self setValuesForKeysWithDictionary:dict];
+    }
+    return self;
+}
++(instancetype)cellModelWithDict:(NSDictionary*)dict{
+    return [[self alloc]initWithDict:dict];
+}
 
 @end

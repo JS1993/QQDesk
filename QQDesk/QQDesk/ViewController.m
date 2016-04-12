@@ -7,14 +7,20 @@
 //
 
 #import "ViewController.h"
-
+#import "CellModelFrame.h"
+#import "TableViewCell.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property(strong,nonatomic)NSMutableArray* cellModelFrame;
 @end
 
 @implementation ViewController
-
+-(NSMutableArray *)cellModelFrame{
+    if (_cellModelFrame==nil) {
+        _cellModelFrame=[CellModelFrame cellModelFrames];
+    }
+    return _cellModelFrame;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
@@ -26,12 +32,12 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-   static NSString* identifier=@"Cell";
-    UITableViewCell* cell=[tableView dequeueReusableCellWithIdentifier:identifier];
-    if (cell==nil) {
-        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
-    }
+    TableViewCell* cell=[TableViewCell tableViewCellWithTableView:tableView];
+    cell.cellModelF=self.cellModelFrame[indexPath.row];
     return cell;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return [self.cellModelFrame[indexPath.row] cellHight];
+}
 @end

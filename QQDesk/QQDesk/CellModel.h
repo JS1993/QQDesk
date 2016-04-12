@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+typedef enum {
+    cellTypeFromSelf=0,
+    cellTypeFromOthers=1
+}CellType;
 
 @interface CellModel : NSObject
+@property(copy,nonatomic)NSString* text;
+@property(copy,nonatomic)NSString* time;
+@property(nonatomic)int type;
+
++(instancetype)cellModelWithDict:(NSDictionary*)dict;
 
 @end
