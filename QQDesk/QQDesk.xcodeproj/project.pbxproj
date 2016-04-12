@@ -20,6 +20,7 @@
 		CF18C6F91CBC95CC009F22C4 /* CellModelFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CF18C6F81CBC95CC009F22C4 /* CellModelFrame.m */; };
 		CF18C6FB1CBC961C009F22C4 /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF18C6FA1CBC961C009F22C4 /* messages.plist */; };
 		CF18C6FE1CBC986B009F22C4 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF18C6FD1CBC986B009F22C4 /* TableViewCell.m */; };
+		CF18C7001CBD2205009F22C4 /* autoReplay.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF18C6FF1CBD2205009F22C4 /* autoReplay.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		CF18C6FA1CBC961C009F22C4 /* messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = messages.plist; sourceTree = "<group>"; };
 		CF18C6FC1CBC986B009F22C4 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		CF18C6FD1CBC986B009F22C4 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		CF18C6FF1CBD2205009F22C4 /* autoReplay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = autoReplay.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		CF18C6BA1CBC90DC009F22C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CF18C6FF1CBD2205009F22C4 /* autoReplay.plist */,
 				CF18C6FA1CBC961C009F22C4 /* messages.plist */,
 				CF18C6C61CBC90DC009F22C4 /* QQDesk.xcdatamodeld */,
 				CF18C6CE1CBC90DC009F22C4 /* Info.plist */,
@@ -299,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF18C7001CBD2205009F22C4 /* autoReplay.plist in Resources */,
 				CF18C6FB1CBC961C009F22C4 /* messages.plist in Resources */,
 				CF18C6CD1CBC90DC009F22C4 /* LaunchScreen.storyboard in Resources */,
 				CF18C6CA1CBC90DC009F22C4 /* Assets.xcassets in Resources */,
